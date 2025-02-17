@@ -9,3 +9,6 @@ on:
 jobs:
   pylint-check:
     uses: JustinasVention/pylintWorkflow/.github/workflows/pylint.yaml@main
+    with: {}
+    secrets:
+      token: ${{ secrets.PAT_TOKEN }}
