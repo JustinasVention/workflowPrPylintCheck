@@ -1,0 +1,11 @@
+# .github/workflows/pylint-check.yaml
+name: Pylint Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pylint-check:
+    uses: JustinasVention/pylintWorkflow/.github/workflows/pylint.yaml@main
